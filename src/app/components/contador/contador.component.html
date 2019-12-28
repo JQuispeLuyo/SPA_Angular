@@ -1,0 +1,13 @@
+<div class="input-group mb-3">
+    <div class="input-group-prepend">
+        <button (click)="actualizar(-5)" class="btn btn-outline-primary" type="button" id="button-addon1">
+            <i class="mdi mdi-minus"></i>
+        </button>
+    </div>
+    <input #inputProgress type="number" class="form-control" [(ngModel)]="cantidadProgress"  name="cantidadProgress" (ngModelChange)="update($event)" min="1" max="100">
+    <div class="input-group-append">
+        <button (click)="actualizar(+5)" class="btn btn-outline-primary" type="button" id="button-addon2">
+            <i class="mdi mdi-plus"></i>
+        </button>
+    </div>
+</div>
