@@ -4,9 +4,9 @@ import { Graficas1Component } from './graficas1/graficas1.component';
 import { ProgressComponent } from './progress/progress.component';
 import { PagesComponent } from './pages.component';
 import { SharedModule } from '../shared/shared.module';
-import { PageRoutingModule } from './page.route';
 import { ComponentsModule } from './../components/components.module';
-
+import { PagesRoutingModule } from './pages-routing.module';
+import { ChartsModule } from 'ng2-charts';
 
 @NgModule({
     declarations:[
@@ -16,7 +16,10 @@ import { ComponentsModule } from './../components/components.module';
         ProgressComponent
     ],
     imports: [
-        PageRoutingModule, SharedModule, ComponentsModule
+        PagesRoutingModule, 
+        SharedModule, 
+        ComponentsModule,
+        ChartsModule,
     ],
     exports: [
         DashboardComponent,
