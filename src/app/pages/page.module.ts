@@ -7,13 +7,15 @@ import { SharedModule } from '../shared/shared.module';
 import { ComponentsModule } from './../components/components.module';
 import { PagesRoutingModule } from './pages-routing.module';
 import { ChartsModule } from 'ng2-charts';
+import { AcountSettingsComponent } from './acount-settings/acount-settings.component';
 
 @NgModule({
     declarations:[
         PagesComponent, 
         DashboardComponent,
         Graficas1Component,
-        ProgressComponent
+        ProgressComponent,
+        AcountSettingsComponent
     ],
     imports: [
         PagesRoutingModule, 
